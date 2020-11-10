@@ -1,0 +1,252 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="st/favicon.ico">
+        <title>阳光高考|志愿填写</title>
+        <!-- 文本 -->
+        <style type="text/css">
+        sup
+        {
+            color: aqua;
+        }
+        h1
+        {   
+            margin-right:10%;
+	        margin-left:10%;
+            border: medium double rgb(0, 0, 0)
+        }
+        p
+        {
+            border: medium double rgb(0, 0, 0)
+        }
+        </style>
+        <style>
+        /* 导航栏    */
+        ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li
+        {
+           float:left;
+        }
+        a:link,a:visited
+        { 
+           display:block;
+           width:120px;
+           font-weight:bold;
+           color:#FFFFFF;
+           background-color:#9c9c9c;
+           text-align:center;
+           padding:4px;
+           text-decoration:none;
+           text-transform:uppercase;
+        }
+        a:hover,a:active
+        {
+           background-color:#232424;
+        }
+        /* 背景与位置*/
+        .bg 
+        { 
+            background:url("st/bg.png"); 
+            background-size: 100%;
+	        margin-right:12%;
+	        margin-left:12%;
+        }
+        .az
+        {
+            margin-right:48%;
+	        margin-left:48%;   
+        }
+        /* 表格 */
+        table 
+        {  
+            border-collapse: collapse;
+        }
+
+        table, td, th 
+        {
+            border: 2px solid black;
+        }
+        /* 按钮 */
+        input[type=submit]
+        {   
+            background-color: #5e5e5e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover
+        {
+            background-color: #1b1b1b;
+        }
+
+        /* 选择与选项 */
+        select 
+        {
+        width: 100%;
+        padding: 5px 40px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        }
+        /* 输入框 */
+        input[type=text]:focus 
+        {
+            background-color: rgb(157, 235, 189);
+        }
+        input[type=tel]:focus 
+        {
+            background-color: rgb(157, 235, 189);
+        }
+        input[type=email]:focus 
+        {
+            background-color: rgb(157, 235, 189);
+        }
+        input[type="date"]
+         {
+            width: 100%;
+            padding: 5px 24px;
+            border:none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+        </style>
+        
+    </head>
+    <body class="bg">
+        <div>
+        <ul> 
+            <li><a href="">填报指南➡</a></a></li>
+            <li><a href="https://www.eol.cn/e_html/gk/chafen/index.shtml" target="_blank">|高考查分|</a></li>
+            <li><a href="https://www.eol.cn/e_html/gk/fsx/" target="_blank">|历年录取线|</a></li>
+            <li><a href="https://www.eol.cn/e_html/gk/gkfsd/" target="_blank">|一分一段|</a></li>
+            <li><a href="http://siminedu.com/simin/client/index.html" target="_blank">|AI指导|</a></li>
+            <li><a href="https://www.chsi.com.cn/" target="_blank">|学信网|</a></li>
+            <li><a href="https://gaokao.chsi.com.cn/" target="_blank">|阳光高考|</a></li>
+            <li><a href="https://www.xtu.edu.cn/" target="_blank">|湘潭大学|</a></li>
+            <li><a href="">⬅填报指南</a></a></li>
+        </ul>
+        </div>
+        <form>
+            <h1 align=center>高 考 志 愿 填 报</h1>
+            <table bgcolor="#DDDDDD" frame="box" >
+            <tr> 
+                <td rowspan="4">考<br>生<br>信<br>息</td>
+                <th>姓名</th><td><input type="text" placeholder="输入您的姓名.."></td>
+                <th>性别</th><td><select><option value ="nan">男<option value="qt">女</option></td>
+                <th>民族</th><td><select><option value ="hz">汉 族<option value="qt">其 他</option></td>
+                <td rowspan="4"> 个人<br>照片</td>
+                <td rowspan="4">上传一<br>张寸照<input type="file" name="file" value="file"></td>
+            </tr>
+            <tr>
+                <th>身份证号</th><td><input type="text" placeholder="输入您的身份证号.."  ></td>
+                <th>准考证号</th><td><input type="text" placeholder="输入您的准考证号.."  ></td>
+                <th>联系电话</th><td><input type="tel" placeholder="输入您的常用电话.."></td>
+            </tr>   
+            <tr>              
+               <th>政治面貌</th><td><select><option value ="ty">团 员<option value="dy">党 员<option value="qt">其 他</option></td>
+               <th>毕业学校</th><td><select><option value ="yz">宁乡一中<option value="qt">其 他</option></td>
+               <th >应届类型</th><td><select><option value ="nc">农村应届<option value="cs">城市应届</option></select></td>
+            </tr>            
+            <tr> 
+                
+                <th>邮政编码</th><td><input type="text" name="yz" placeholder="输入所在地的邮政编码.."></td>
+                <th>电子邮箱</th><td><input type="email" name="yx" placeholder="输入您的电子邮箱.."></td>
+                <th>家庭住址</th><td><input type="text" name="dz" placeholder="输入您的详细地址.."></td>
+            </tr>
+            </table>
+            <table frame="box" bgcolor="#DDDDDD">
+            <tr> 
+                <td rowspan="10">志<br>愿<br>填<br>报</td>             
+                <th>院校代号A</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号B</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号C</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号D</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号E</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号F</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号G</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号H</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号I</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+             <tr>              
+                <th>院校代号J</th><td><input type="text" placeholder="输入院校代号.."></td>
+                <th>专业1</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业2</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>专业3</th><td><select><option value ="wl">网络工程<option value="qt">其他</option></td>
+                <th>服从调剂</th><td><select><option value ="f">否<option value="s">是</option></select></td>
+             </tr>
+            </table>
+            
+            <table frame="box" bgcolor="#DDDDDD">
+            <td rowspan="10">自<br>我<br>展<br>示</td><td><video width="638" height="320" controls src="st/video.mp4"></video></td>
+            <td rowspan="10">个<br>人<br>简<br>历</td><td><textarea cols="50" rows="22"></textarea></td>
+            <td></td>
+            </table> 
+        </form>
+        <h6>注：填报某校“专业服从”即表示服从该校在当前批次、当前科类各招生专业间调剂。</h6>       
+        <div class="az">
+        <input type="submit" value="确认并提交">
+        </div>   
+    </body>
+</html>
